@@ -87,6 +87,15 @@ git_proxy   //配置git代理,永久生效
 ungit_proxy //清除git代理,永久生效
 proxy_check //检查当前command line的代理情况(返回一个ip和git的代理情况)
 ```
+## Testing
+*我只在Ubuntu18.04.3和Ubuntu16.04.6做过测试，安装及使用情况正常*  
+*理论上来说支持所有以apt为包管理器的Linux发行版本*  
+
+## BUG
+目前已知的错误是：
+- 在ssr config(输入了配置文件之后)报错json格式问题  
+    原因：可能是由于安装了jq导致解析配置文件错误  
+    处理方法：去掉~/.local/share/shadowsocksr/config.json中的所有注释,保证json格式的正确  
 
 ## Note
 对于任何问题或者反馈，请随时在此处创建issue或者通过Twitter[与我联系](https://twitter.com/samren0215)
