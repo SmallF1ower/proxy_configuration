@@ -81,6 +81,12 @@ source ~/.zshrc
 
 ## Usage
 ```
+ssr start                   /*
+sudo service polipo start   start server */
+
+ssr stop                    /*
+sudo service polipo stop    start server */
+
 proxy       //开启代理(all_proxy),仅在当前command line生效
 unproxy     //关闭代理(all_proxy),进在当前command line生效
 git_proxy   //配置git代理,永久生效
